@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="明星商品推荐"
+            android:id="@+id/SecondActivityTextView1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="手机平板展示"
+            android:id="@+id/SecondActivityTextView2"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/SecondActivityButton1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="家用电器展示"
+            android:id="@+id/SecondActivityTextView3"
+            android:layout_below="@+id/SecondActivityButton1"
+            android:layout_alignStart="@+id/SecondActivityButton1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="电脑数码展示"
+            android:id="@+id/SecondActivityTextView4"
+            android:layout_above="@+id/SecondActivityButton3"
+            android:layout_toEndOf="@+id/SecondActivityButton3" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看明星商品列表"
+            android:id="@+id/SecondActivityButton1"
+            android:layout_below="@+id/SecondActivityTextView1"
+            android:layout_alignStart="@+id/SecondActivityTextView1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看手机平板列表"
+            android:id="@+id/SecondActivityButton2"
+            android:layout_below="@+id/SecondActivityTextView2"
+            android:layout_alignStart="@+id/SecondActivityTextView2" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看家用电器列表"
+            android:id="@+id/SecondActivityButton3"
+            android:layout_below="@+id/SecondActivityTextView3"
+            android:layout_alignStart="@+id/SecondActivityTextView3" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看电脑数码列表"
+            android:id="@+id/SecondActivityButton4"
+            android:layout_below="@+id/SecondActivityTextView4"
+            android:layout_alignStart="@+id/SecondActivityTextView4" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="查看此商品详情"
+            android:id="@+id/SecondActivityButton5"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@+id/SecondActivityListView" />
+
+        <ImageView
+            android:src="@drawable/imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_below="@+id/SecondActivityButton3"
+            android:layout_alignEnd="@+id/SecondActivityButton4" />
+        <!-- imageview在后续过程中需要改成imageswich配gallery的看图器-->
+        <ListView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/SecondActivityListView"
+            android:layout_alignParentEnd="true"
+            android:layout_toEndOf="@+id/SecondActivityButton4"
+            android:layout_alignParentTop="true" />
+        <!-- 这是商品列表，在点击查看xxx之后，显示那一类型的商品-->
+    </RelativeLayout>
+</LinearLayout>
